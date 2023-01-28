@@ -22,7 +22,7 @@
          where it = #{id}
     </update>
 
-    <delete>
+    <delete id="deleteById">
         delete from board_tb where id = #{id}
     </delete>
 </mapper>

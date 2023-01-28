@@ -23,7 +23,7 @@
          where it = #{id}
     </update>
 
-    <delete>
+    <delete id="deleteById">
         delete from user_tb where id = #{id}
     </delete>
 </mapper>
