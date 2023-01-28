@@ -12,6 +12,10 @@
         select * from board_tb
     </select>
 
+    <select id="findByUserId" resultType="shop.mtcoding.test3.model.Board">
+        select * from board_tb where user_id = #{userId}
+    </select>
+
     <select id="findById" resultType="shop.mtcoding.test3.model.Board">
         select * from board_tb where id = #{id}
     </select>

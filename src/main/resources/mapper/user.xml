@@ -24,7 +24,7 @@
         update user_tb
            set password = #{password},
                email = #{email}
-         where it = #{id}
+         where id = #{id}
     </update>
 
     <delete id="deleteById">

@@ -12,10 +12,10 @@
 
 
             <div class="align_center">
-                <form action="/login" method="post">
-                    <input type="text" name="username" value="ssar" placeholder="Enter username" readonly><br>
-                    <input type="password" name="password" value="1234" required><br>
-                    <input type="email" name="email" value="ssar@nate.com" required><br>
+                <form action="/user/${user.id}/update" method="post">
+                    <input type="text" name="username" value="${user.username}" placeholder="Enter username" readonly><br>
+                    <input type="password" name="password" value="${user.password}" required><br>
+                    <input type="email" name="email" value="${user.email}" required><br>
                     <button type="submit">수정완료</button>
                 </form>
             </div>

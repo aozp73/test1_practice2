@@ -18,11 +18,14 @@
                         <th>제목</th>
                         <th>작성일</th>
                     </tr>
+
+                    <c:forEach items="${boardList}" var="board">
                     <tr>
-                        <td>1</td>
-                        <td>첫번째</td>
-                        <td>2020</td>
+                        <td>${board.id}</td>
+                        <td>${board.title}</td>
+                        <td>${board.createdAt}</td>
                     </tr>
+                    </c:forEach>
                 </table>
 
             </div>
